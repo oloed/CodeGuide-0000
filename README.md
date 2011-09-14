@@ -35,36 +35,37 @@ Dual licensed under the [MIT license](https://github.com/imakewebthings/deck.js/
 Honestly, I'm kicking ideas around right now...
 
 - General kick in the face to bad code styles:
--- in-line doesn't exist anymore, don't use it, even once.
--- javascript psudo-protocol is idiotic
+- - in-line doesn't exist anymore, don't use it, even once.
+- - javascript psudo-protocol is idiotic
+- - Stop doing cut+paste+tweak
 
 -Don't suck at
--- Loops
--- Decision structures
--- Arrays/objects
--- Events (should I cover dom first?)
--- Prototypal objects (has own porpery and truthy things)
--- One trick pony and jQuery.
--- Pretending javascript is something it's not and bitching about it later when it turns out it isn't.
+- - Loops
+- - Decision structures
+- - Arrays/objects
+- - Events (should I cover dom first?)
+- - Prototypal objects (has own porpery and truthy things)
+- - One trick pony and jQuery.
+- - Pretending javascript is something it's not and bitching about it later when it turns out it isn't. 
 
 - Good/Best practices:
--- DRY code
--- design patterns
--- Documentation
--- How to name variables
--- What the hell a function and an object is
+- - DRY code
+- - design patterns
+- - Documentation
+- - How to name variables
+- - What the hell a function and an object is
 
 - Knowledge you should have
--- layers of things. Maybe an overview of the OSI and HTTP?
--- unit tests
--- SCM
--- Static code analysis tools
--- DOM
--- Explain what jQuery is, explain there's life outside of it, explain it's bad
--- jsperf?
--- Browsers, how they make it work and why you make them cry
+- - layers of things. Maybe an overview of the OSI and HTTP?
+- - unit tests
+- - SCM
+- - Static code analysis tools
+- - DOM
+- - Explain what jQuery is, explain there's life outside of it, explain it's bad
+- - jsperf?
+- - Browsers, how they make it work and why you make them cry
 
 - Community
--- How to ask questions. How to tell if someone's smarter than you. How not to piss people off.
--- Good sites (mdc, js garden w3c ...)
--- BAD sites (lookin' at you dynamic drive, javascriptkit, and w3schools.)
+- - How to ask questions. How to tell if someone's smarter than you. How not to piss people off.
+- - Good sites (mdc, js garden w3c ...)
+- -  BAD sites (lookin' at you dynamic drive, javascriptkit, and w3schools.)
