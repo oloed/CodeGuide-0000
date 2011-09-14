@@ -50,6 +50,7 @@ Honestly, I'm kicking ideas around right now...
 - - One trick pony and jQuery.
 - - Pretending javascript is something it's not and bitching about it later when it turns out it isn't. 
 - - Noscript? (I hate this one)
+- - h4x0rz
 
 
 - Good/Best practices:
