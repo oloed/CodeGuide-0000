@@ -49,6 +49,7 @@ Honestly, I'm kicking ideas around right now...
 - - Prototypal objects (has own porpery and truthy things)
 - - One trick pony and jQuery.
 - - Pretending javascript is something it's not and bitching about it later when it turns out it isn't. 
+- - Noscript? (I hate this one)
 
 
 - Good/Best practices:
