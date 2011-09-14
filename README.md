@@ -4,9 +4,9 @@ This was built on deck.js because I saw it the other day and it looked all kinds
 
 I generally write a little bit each time someone sends me flying into a rage with awful code. Spooling missteaks are bound to be plentiful.
 
-## License
+# License
 
-#"So you want to write some quality JavaScript"
+##"So you want to write some quality JavaScript"
 
 So you want to write some quality JavaScript by Brian Graham is licensed under a [Creative Commons Attribution-NonCommercial 2.5 Canada License](http://creativecommons.org/licenses/by-nc/2.5/ca/).
 
@@ -14,23 +14,23 @@ If you're a school professor/instructor/teacher, contact me for permission. You 
 
 Khan accademy's cool to use or remix any of this in any way should they so wish.
 
-#Deck.js
+##Deck.js
+
+I built this on a project called Deck.js. You can find it on GitHub.
 
 Copyright (c) 2011 Caleb Troughton
 
 Dual licensed under the [MIT license](https://github.com/imakewebthings/deck.js/blob/master/MIT-license.txt) and [GPL license](https://github.com/imakewebthings/deck.js/blob/master/GPL-license.txt).
 
-## Roadmap/Goals
+# Roadmap/Goals
 
-#Goals to resolve
+##Goals to resolve
 
 - There is an issue best described as "the blind leading the blind," where many JavaScript authors feel it's fine to write some of the worst code on the face of the earth. I would like to try and make an impact here.
 - I need the work to be interesting, or these people too lazy to RTFM but not lazy enough to write code will lose interest.
-- 
-- 
 - I want to create "future pull" in the work. 
 
-#Roadmap
+##Roadmap
 
 Honestly, I'm kicking ideas around right now...
 
