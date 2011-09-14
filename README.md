@@ -68,4 +68,4 @@ Honestly, I'm kicking ideas around right now...
 - Community
 - - How to ask questions. How to tell if someone's smarter than you. How not to piss people off.
 - - Good sites (mdc, js garden w3c ...)
-- -  BAD sites (lookin' at you dynamic drive, javascriptkit, and w3schools.)
+- - BAD sites (lookin' at you dynamic drive, javascriptkit, and w3schools.)
