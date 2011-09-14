@@ -30,8 +30,6 @@ Dual licensed under the [MIT license](https://github.com/imakewebthings/deck.js/
 - I need the work to be interesting, or these people too lazy to RTFM but not lazy enough to write code will lose interest.
 - I want to create "future pull" in the work. 
 
-##Roadmap
-
 Honestly, I'm kicking ideas around right now...
 
 
@@ -76,3 +74,68 @@ Honestly, I'm kicking ideas around right now...
 - - How to ask questions. How to tell if someone's smarter than you. How not to piss people off.
 - - Good sites (mdc, js garden w3c ...)
 - - BAD sites (lookin' at you dynamic drive, javascriptkit, and w3schools.)
+
+
+##Roadmap
+
+Introduction to who the person is, some guy at a job. Or a student. I'd like to cross the broundy here somehow.
+
+Take them through a problem they have to solve, or multiple ones. Take them through what they did (the bad solution).
+
+Bad thigns you do:
+
+1. cut+paste+tweak
+1. in-line styles and JS
+1. Psudo-protocol
+1. Abuse of arrays/objects
+1. loops abuse
+1. control structures (lots of ifs, no idea what switch is, or something...)
+1. Events everywhere on everything all the time
+1. Noscript? No service.
+1. Try to write the thing like it's a class.
+1. global global global
+1. ignore licences/copyrights
+1. jQuery all the things!!!!111
+1. We don't need no stinkin' comments
+1. Variables that are just a few letters, or named stupidly
+
+Smart things you don't do:
+
+1. No SCM
+1. No docs
+1. no linting
+1. no design patterns
+1. no peer review
+1. w3fools
+1. Don't bother with reading specs
+1. Ask for help when you need it
+1. Don't know when you need help
+
+Bad things that happen:
+
+1. h4x/xss
+1. slow
+1. crashes in some browsers, not others
+1. crashes in random situations but you can't figure it out so it doesn't exist
+1. Nobody wants to help you
+
+Things you need to learn:
+
+1. OSI/HTTP
+1. DOM
+1. How browsers work
+1. unit tests
+1. spotting good code, spotting bad code
+
+
+
+
+... now to figure out a story-board?
+
+
+
+
+
+
+
+
