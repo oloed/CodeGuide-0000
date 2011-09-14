@@ -39,7 +39,7 @@ Honestly, I'm kicking ideas around right now...
 - - javascript psudo-protocol is idiotic
 - - Stop doing cut+paste+tweak
 
--Don't suck at
+-Don't suck at:
 - - Loops
 - - Decision structures
 - - Arrays/objects
@@ -55,7 +55,7 @@ Honestly, I'm kicking ideas around right now...
 - - How to name variables
 - - What the hell a function and an object is
 
-- Knowledge you should have
+- Knowledge you should have:
 - - layers of things. Maybe an overview of the OSI and HTTP?
 - - unit tests
 - - SCM
@@ -65,7 +65,7 @@ Honestly, I'm kicking ideas around right now...
 - - jsperf?
 - - Browsers, how they make it work and why you make them cry
 
-- Community
+- Community:
 - - How to ask questions. How to tell if someone's smarter than you. How not to piss people off.
 - - Good sites (mdc, js garden w3c ...)
 - - BAD sites (lookin' at you dynamic drive, javascriptkit, and w3schools.)
