@@ -24,18 +24,20 @@ and how tog et better isn't known to them, or appears too hard to be worth any r
 - Invent the Window API, DOM API and XHR API
 
 ##Act two: This thing's bigger than just you and me
+- And you're totally naked, everything is open source, there's nothing you can do
 - Invent multiple browsers, and standards.
 - Problems with one browser, not in others (crashes, renders, bugs, etc)
 - Hack the planet (xss)
 - Programming community: Good stuff, bad stuff. How to get help, peer review, docs, 
 - Write code that we can actually share. This means clean code, variable names.
 - No script.
+- es5, shim via prototype, AWESOME
 - Population of the world online, vs next 10 years.
 
 ##Act Three: How to write clean code, not a mess.
 - Logical variable names
 - Documentation: Comments and docs
-- Design patterns, abstractions (cut+paste+tweak DIES HERE)
+- modular design, functional patterns, abstractions (cut+paste+tweak DIES HERE)
 - Hail the DOM events, the inline script tag is dead!
 - Javascript: psudeo protocol doesn't work and is dead.
 
@@ -55,12 +57,12 @@ and how tog et better isn't known to them, or appears too hard to be worth any r
 - JS is prototypes, not classes. Stop doing that.
 
 ##Act six: Back to basics
-- You're wrong, and that's awesome, because you know something now.
+- You're wrong, and that's awesome, because you know something now
 - You don't always need jQuery
-- You don't need cut+paste+tweak, make DRY code.
-- Don't abuse arrays/object differences, learn to loop, dare to dream. old Opera/FF, old MISE, sometimes Flash, 
+- You don't need cut+paste+tweak, make DRY code
+- Don't abuse arrays/object differences, learn to loop, dare to dream. old Opera/FF, old MISE, sometimes Flash
 - How decision structures can be used to your advantage, not add complexity to your code
-- RTFM... specs, docs, etc.
+- RTFM... specs, docs, etc
 
 ##Act seven: Become a Samurai, not a code ninja.
 - What's a Samurai? (Teaches everywhere, makes things, learns things, and a mighty force)
