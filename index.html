@@ -33,28 +33,44 @@
 
 <body class="deck-container">
 
-<div class="theme-menu">
-	<h2>Themes</h2>	
-	
-	<label for="style-themes">Style:</label>
-	<select id="style-themes">
-		<option selected value="./deck/themes/style/web-2.0.css">Web 2.0</option>
-		<option value="./deck/themes/style/swiss.css">Swiss</option>
-		<option value="./deck/themes/style/neon.css">Neon</option>
-		<option value="">None</option>
-	</select>
-	
-	<label for="transition-themes">Transition:</label>
-	<select id="transition-themes">
-		<option selected value="./deck/themes/transition/horizontal-slide.css">Horizontal Slide</option>
-		<option value="./deck/themes/transition/vertical-slide.css">Vertical Slide</option>
-		<option value="./deck/themes/transition/fade.css">Fade</option>
-		<option value="">None</option>
-	</select>
-</div>
 
 <div class="slide">
 	<h1>So you want to write some quality JavaScript</h1>
+</div>
+<div class="slide">
+	<h2>Overview</h2>
+	<ol>
+		<li>
+			<h3>Prequil: Dante's inferno</h3>
+		</li>
+		<li>
+			<h3>Act one: How things work</h3>
+		</li>
+		<li>
+			<h3>Act two: This thing's bigger than just you and me</h3>
+		</li>
+		<li>
+			<h3>Act three: How to write clean code, not a total mess</h3>
+		</li>
+		<li>
+			<h3>Act four: How to write code that won't break</h3>
+		</li>
+		<li>
+			<h3>Act five: How to write JavaScript people will love</h3>
+		</li>
+		<li>
+			<h3>Act six: Back to basics</h3>
+		</li>
+		<li>
+			<h3>Act seven: Way of the programmer</h3>
+		</li>
+		<li>
+			<h3>Epilogue</h3>
+		</li>
+	</ol>
+</div>
+<div class="slide">
+	<h1>Prequil: Dante's inferno</h1>
 </div>
 
 <div class="slide">
@@ -62,41 +78,222 @@
 	<ol>
 		<li>
 			<h3>You're just sitting around, it's nearly lunch, you're hungry</h3>
-			<p>Your boss comes over and says to you, <em>"Skywalker, we need this widget thing on the front page, and I totally want to mouse-over it and get some sweet photos that are huge because I'm sure people will buy stuff now when we do that."</em></p>
+			<p>Someone knows you write some JavaScript, so they come over and need you to write something that lets you click on a thumbnail and make a larger picture.</p>
 		</li>
 		<li>
 			<h3>You search DuckDuckGo for something</h3>
-			<p><a href="http://duckduckgo.com/?q=how+do+i+program+javascript%3F">DuckDuckGo</a> (even though it's awesome) ends up giving really confusing results, there's all sorts of answers, some work, some fail. You just don't know what to do. All the good resources look way too complex to get into. You find something, you drag it into your code.</p>
+			<p><a href="http://duckduckgo.com/?q=how+do+i+program+javascript%3F">DuckDuckGo</a> (even though it's awesome) ends up giving really confusing results, there's all sorts of answers, some work, some fail. You just don't know what to do. All the good resources look way too complex to get into. After hours of searching top-ten-lists of JavaScript plugins you find this really sweet plugin and try to put it into your code.</p>
 		</li>
 		<li>
 			<h3>It doesn't quite work</h3>
-			<p>But you're hungry and the pointy-haird guy wants it. So you figure you'll just cut+paste it around a few times, toss in a few elements, in-line events, get six other people to try and figure out whats wrong when you can't, shove some loops in there and call it a day.
-			<pre><code>onmouseover="javascript:runSomething1()"</code></pre></p>
+			<p>It's way too hard to figure out and you can't get the thing to work. But you're hungry and the pointy-haird guy wants it yesterday. You did see this one thing over on DynamicDrive and W3Schools about how to do something like that, so you try and copy it. It might not be as fancy as those plugins, but it sure does the job. In fact, it probably looks like this...</p>
 		</li>
 	</ol>
 </div>
-
 <div class="slide">
-	<h2>Well look what you did, you little jerk.</h2>
-	<p>Your pointy haired boss comes back screaming about how their clients are screaming that it doesn't work, it's full of bugs, sometimes it won't load, now they get error popups, your code snippet's been featured on <a href="http://thedailywtf.com/Articles/OnClick-Does-What!.aspx">TheDailyWTF</a>.</p>
-	<img src="http://i.imgur.com/NxjAn.gif" alt="JavaScript errors in Internet Explorer">
-	<p>Everyone's laughing at you, and nobody will sit next to you in the school cafeteria.</p>
-	<p>But this isn't anything like you, you're an ace, a total renegade, you don't need to follow any of that weird crap everyone is always raving about to write good code. Works fine in your browser. Besides, who has time to learn all that?</p>
+	<h2>Well look what you did! You're a hero!</h2>
+			<pre><code>
+&lt;script&gt;
+  function runSomething1() {./*set an image to 1.jpg*/}
+  function runSomething2() {./*set an image to 2.jpg*/}
+  function runSomething3() {./*set an image to 3.jpg*/}
+&lt;/script&gt;
+
+&lt;a href=&quot;&quot; onmouseover=&quot;javascript:runSomething1()&quot; style=&quot;hover{color:blue}&quot; /&gt;Image One&lt;/a&gt;
+&lt;a href=&quot;&quot; onmouseover=&quot;javascript:runSomething2()&quot; style=&quot;hover{color:blue}&quot; /&gt;Image Two&lt;/a&gt;
+&lt;a href=&quot;&quot; onmouseover=&quot;javascript:runSomething3()&quot; style=&quot;hover{color:blue}&quot;/&gt;Image Three&lt;/a&gt;
+</code></pre>
+<p>Your pointy haired friend comes back thanking you up-and-down for the awesome job you did and how awesome it works. You're a hero, this must be what it's like to be a professional programmer.</p>
+<p>As you gaze off into space, so proud, pointy-hair wonders if you could make a few minor changes to the thing... nothing huge of course.</p>
+</div>
+<div class="slide">
+	<h2>Chapter one: the plot thickens.</h2>
+	<blockquote>I want to add six more images and make every-other image link green, also the fourth image should show up when it loads.
+	<br/>
+	<br/>
+	<em>Love,<br/>
+	Dr. Pointy-hair, PhD.</em>
+	</blockquote>
+	<p>So that's what you go off and do, expanding on your code from before. You add six more functions, go back, make five of the links blue <code>style="hover{color:blue}"</code>,  and stick a <code>onload="doSomething4()"</code> into the body tag. </p>
+	<p>Wow, all this programming is hard work. Finally, after clicking around a bit everything looks like it's in working order. You tell the client they just have to change index2.html in their webserver to index.html, and it will be live. Just to be safe, make an index-bakJul42011.html.bak file so they have a copy of the old one.</p>
+	<p>Another job well done!</p>
+</div>
+<div class="slide">
+	<h2>Well look what you did! You little jerk!</h2>
+	<p>Pointy hair isn't happy, he renamed files like you said on his website and ran the page only to be faced with this friendly box:</p>
+	<img src="./mise.gif" alt="JavaScript errors in Internet Explorer" />
+	<p>Of course, you just explain to him he's on a really really old browser and he should upgrade because Internet Explorer is stupid and smells like old cheese also Fox fires are so 1337.</p>
+	<p>Pointy hair kindly asks if you've lost your freaking mind. His customers use this browser. He paid you to make this work, so go and make it work. Other sites have stuff like this and it works fine in his browser. You're not getting paid till this works.</p>
+	<h3>Finally, it works!</h3>
+	<p>Hours and hours of hard work later you re-write the code twice and finally it works in the browser he uses. You just hope it works in other browsers as well. It's just a shame you ended up working for less than $10.00 per hour on this... Stupid IE.</p>
 </div>
 
 <div class="slide">
-	<h2>The person who will maintain your code is a maniac serial killer</h2>
-	<p>And they know where you live. And guess what? Your old pointy-haired boss just asked her to make a few simple changes to your script. Damnit, why did you have to use one-letter variable names? Why couldn't you add a single comment in there? Why couldn't you have tested it a bit more? Why did you put in five hundred lines of ASCII art?! Better get a one-way ticket to Mogadishu, Somalia. What's that? A knock at the door? Don't answer it, RUN!</p>
-	<h2>What a twist!</h2>
-	<p>Remember that code you wrote? Like... a year back? Turns out that maniac is you! What the hell did this code do? Why does it look so odd?</p>
-	<pre><code>function _gjuc(){
-	var b=_gjwl.href.indexOf("#");if(b>=0){var a=_gjwl.href.substring(b+1);
-		if(/(^|&)q=/.test(a)&&a.indexOf("#")==-1&&!/(^|&)cad=h($|&)/.test(a)){
-		    _gjwl.replace("/search?"+a.replace(/(^|&)fp=[^&]*/g,"")+"&cad=h");
-		return 1}}return 0;}</code></pre>
-	
+	<h2>How was that vacation?</h2>
+	<p>Hope you had fun. We needed changes while you were away but everyone said the code was just way too complex to figure out. Hope you can work it out. We want all those thumbnails to have a caption now. Better look at your code.</p>
+	<pre><code>onclick=&quot;function _gjuc(){var b=_gjwl.href.indexOf(\&quot;#\&quot;);if(b&gt;=0){var a=_gjwl.href.substring(b+1);if(/(^|&amp;)q=/.test(a)&amp;&amp;a.indexOf(\&quot;#\&quot;)==-1&amp;&amp;!/(^|&amp;)cad=h($|&amp;)/.test(a)){_gjwl.replace(\&quot;/search?\&quot;+a.replace(/(^|&amp;)fp=[^&amp;]*/g,\&quot;\&quot;)+\&quot;&amp;cad=h\&quot;);return 1}}return 0;}&quot;</code></pre>
+	<p>Uhhh, wait, you wrote this? What did it do? Ugh... Okay, maybe you should check out some blogs for a while and it will come back to you. Oh, this looks neat, <a href="http://thedailywtf.com/Articles/OnClick-Does-What!.aspx">TheDailyWTF</a>. A site that showcases bad code? </p>
+	<pre><code>onclick=&quot;function _gjuc(){var b=_gjwl.href.indexOf(\&quot;#\&quot;);if(b&gt;=0){var a=_gjwl.href.substring(b+1);if(/(^|&amp;)q=/.test(a)&amp;&amp;a.indexOf(\&quot;#\&quot;)==-1&amp;&amp;!/(^|&amp;)cad=h($|&amp;)/.test(a)){_gjwl.replace(\&quot;/search?\&quot;+a.replace(/(^|&amp;)fp=[^&amp;]*/g,\&quot;\&quot;)+\&quot;&amp;cad=h\&quot;);return 1}}return 0;}&quot;</code></pre>
+	<p>That's your code out there. Oh, that's not good. That's not good at all. Who sent this in? Was it one of the people they had look at my code? Why would they do this? This is so embarassing!</p>
+	<p>But wait! They don't understand! It's totally out of context. This is top-notch programming! You wrote this yourself! You spent a long time learning how to write JavaScript this well, and it was really hard. They're just jealious. I'll show them, I'll make this code work fine. It'll only take you a few days... Better fire up dreamweaver.</p>
 </div>
 
+<div class="slide">
+	<h2>It's not you, it's me. We had to hire someone else.</h2>
+	<p>
+	<strong>Lancey Howard:</strong> Gets down to what it's all about, doesn't it? Making the wrong move at the right time. <br/>
+	<strong>Cincinnati Kid:</strong> Is that what it's all about? <br/>
+	<strong>Lancey Howard:</strong> Like life, I guess. You're good, kid, but as long as I'm around you're second best. You might as well learn to live with it.	<br/>
+	<br/>
+	From <em>The Cincinnati Kid</em>, 1965.
+	</p>
+	<img src="./Ckfilm.jpg" alt="JavaScript errors in Internet Explorer" />
+	<hr/>
+	<p>The cost of your code per hour is far below average, but the cost of keeping you around was too high. It's hard for the company to write new code around yours, and you take more than three-times as long as the new guy.</p>
+	<p>How did he get to be such a hot shot? I looked at all the best sites like w3schools, I made multiple backups on the server clearly re-named, my code and styled were linked directly with every HTML element, my variable names didn't waste space, <strong>and</strong> I used the best browser out there.</p>
+</div>
+
+<div class="slide">
+	<h2>Mission Impossible</h2>
+	<h3>You have two options</h3>
+	<ol>
+		<li>
+			<h4>Figure out how to write better JavaScript</h4>
+		</li>
+		<li>
+			<h4>Go find something else to do that doesn't involve programming</h4>
+		</li>
+	</ol>
+	<p>Oh look, a slideshow called <strong>So, you want to write quality JavaScript?</strong>, lets read that.</p>
+</div>
+
+<div class="slide">
+	<h1>Act one: How things work</h1>
+</div>
+<div class="slide">
+	<h2>Title</h2>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+<div class="slide">
+	<h2>Title</h2>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+
+<div class="slide">
+	<h1>Act two: This things bigger than just you and me</h1>
+</div>
+<div class="slide">
+	<h2>Title</h2>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+<div class="slide">
+	<h2>Title</h2>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+
+<div class="slide">
+	<h1>Act three: How to write clean code, not a pasta</h1>
+</div>
+<div class="slide">
+	<h2>Title</h2>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+<div class="slide">
+	<h2>Title</h2>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+
+<div class="slide">
+	<h1>Act four: How things work</h1>
+</div>
+<div class="slide">
+	<h2>Title</h2>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+<div class="slide">
+	<h2>Title</h2>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+
+<div class="slide">
+	<h1>Act five: How to write JavaScript people will love</h1>
+</div>
+<div class="slide">
+	<h2>Title</h2>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+<div class="slide">
+	<h2>Title</h2>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+
+<div class="slide">
+	<h1>Act six: Back to basics</h1>
+</div>
+<div class="slide">
+	<h2>Title</h2>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+<div class="slide">
+	<h2>Title</h2>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+
+<div class="slide">
+	<h1>Act seven: Way of the programmer</h1>
+</div>
+<div class="slide">
+	<h2>Title</h2>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+<div class="slide">
+	<h2>Title</h2>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+
+<div class="slide">
+	<h1>Epiloge</h1>
+</div>
+<div class="slide">
+	<h2>Title</h2>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+<div class="slide">
+	<h2>Title</h2>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
 <!--
 
 <div class="slide">
