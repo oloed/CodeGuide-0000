@@ -85,12 +85,3 @@ So you want to write some quality JavaScript by Brian Graham is licensed under a
 If you're a school professor/instructor/teacher, contact me for permission. You are, in fact, a business. You make money.
 
 Khan accademy's cool to use or remix any of this in any way should they so wish.
-
-##Deck.js
-
-I built this on a project called Deck.js. You can find it on GitHub.
-
-Copyright (c) 2011 Caleb Troughton
-
-Dual licensed under the [MIT license](https://github.com/imakewebthings/deck.js/blob/master/MIT-license.txt) and [GPL license](https://github.com/imakewebthings/deck.js/blob/master/GPL-license.txt).
-
