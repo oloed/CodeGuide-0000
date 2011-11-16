@@ -1,79 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>So you want to write some quality JavaScript</title>
-	
-	<meta name="author"   content="Brian Graham">
-	<meta name="viewport" content="width=1024">
-	
-	<link rel="stylesheet" href="./presentation.css">
-	
+    <meta charset="utf-8">
+    <title>So you want to write some quality JavaScript</title>
+    
+    <meta name="author"   content="Brian Graham">
+    <meta name="viewport" content="width=1024">
+    
+    <link rel="stylesheet" href="./presentation.css">
+    
 </head>
 
 <body class="deck-container">
 
 <article class="slide" id="1-1">
-	<h1>So you want to write some quality JavaScript</h1>
+    <h1>So you want to write some quality JavaScript</h1>
 </article>
-
 <article class="slide" id="1-2">
-	<h2>Overview</h2>
-	<ol>
-		<li>
-			<a href=""><h3>Prequil: Dante's inferno</h3></a>
-		</li>
-		<li>
-			<a href="#3-1"><h3>Act one: How things work</h3></a>
-		</li>
-		<li>
-			<a href="#4-1"><h3>Act two: This thing's bigger than just you and me</h3></a>
-		</li>
-		<li>
-			<a href="#5-1"><h3>Act three: How to write clean code, not a total mess</h3></a>
-		</li>
-		<li>
-			<a href="#6-1"><h3>Act four: How to write code that won't break</h3></a>
-		</li>
-		<li>
-			<a href="#7-1"><h3>Act five: How to write JavaScript people will love</h3></a>
-		</li>
-		<li>
-			<a href="#8-1"><h3>Act six: Back to basics</h3></a>
-		</li>
-		<li>
-			<a href="#9-1"><h3>Act seven: Way of the programmer</h3></a>
-		</li>
-		<li>
-			<a href="#10-1"><h3>Epilogue</h3></a>
-		</li>
-	</ol>
+    <h2>Overview</h2>
+    <ol>
+        <li>
+            <a href="#2-1"><h3>Prequil: Dante's inferno</h3></a>
+        </li>
+        <li>
+            <a href="#3-1"><h3>Act one: How things work</h3></a>
+        </li>
+        <li>
+            <a href="#4-1"><h3>Act two: This thing's bigger than just you and me</h3></a>
+        </li>
+        <li>
+            <a href="#5-1"><h3>Act three: How to write clean code, not a total mess</h3></a>
+        </li>
+        <li>
+            <a href="#6-1"><h3>Act four: How to write code that won't break</h3></a>
+        </li>
+        <li>
+            <a href="#7-1"><h3>Act five: How to write JavaScript people will love</h3></a>
+        </li>
+        <li>
+            <a href="#8-1"><h3>Act six: Back to basics</h3></a>
+        </li>
+        <li>
+            <a href="#9-1"><h3>Act seven: Way of the programmer</h3></a>
+        </li>
+        <li>
+            <a href="#10-1"><h3>Epilogue</h3></a>
+        </li>
+    </ol>
 </article>
+
 <article class="slide" id="2-1">
-	<h1>Prequil: Dante's inferno</h1>
+    <h1>Prequil: Dante's inferno</h1>
 </article>
-
 <article class="slide" id="2-2">
-	<h2>Problem?</h2>
-	<ol>
-		<li>
-			<h3>You're just sitting around, it's nearly lunch, you're hungry</h3>
-			<p>Someone knows you write some JavaScript, so they come over and need you to write something that lets you click on a thumbnail and make a larger picture.</p>
-		</li>
-		<li>
-			<h3>You search DuckDuckGo for something</h3>
-			<p><a href="http://duckduckgo.com/?q=how+do+i+program+javascript%3F">DuckDuckGo</a> (even though it's awesome) ends up giving really confusing results, there's all sorts of answers, some work, some fail. You just don't know what to do. All the good resources look way too complex to get into. After hours of searching top-ten-lists of JavaScript plugins you find this really sweet plugin and try to put it into your code.</p>
-		</li>
-		<li>
-			<h3>It doesn't quite work</h3>
-			<p>It's way too hard to figure out and you can't get the thing to work. But you're hungry and the pointy-haird guy wants it yesterday. You did see this one thing over on DynamicDrive and W3Schools about how to do something like that, so you try and copy it. It might not be as fancy as those plugins, but it sure does the job. In fact, it probably looks like this...</p>
-		</li>
-	</ol>
+    <h2>Problem?</h2>
+    <ol>
+        <li>
+            <h3>You're just sitting around, it's nearly lunch, you're hungry</h3>
+            <p>Someone knows you write some code, so they come over and need you to write something that lets you click on a thumbnail and make a larger picture.</p>
+        </li>
+        <li>
+            <h3>You search DuckDuckGo for something</h3>
+            <p><a href="http://duckduckgo.com/?q=how+do+i+program+javascript%3F">DuckDuckGo</a> (even though it's awesome) ends up giving really confusing results, there's all sorts of answers, some work, some fail. You just don't know what to do. All the good resources look way too complex to get into. After hours of searching top-ten-lists of JavaScript plugins you find this really sweet plugin and try to put it into your code.</p>
+        </li>
+        <li>
+            <h3>It doesn't quite work</h3>
+            <p>It's way too hard to figure out and you can't get the thing to work. But you're hungry and the pointy-haird guy wants it yesterday. You did see this one thing over on DynamicDrive and W3Schools about how to do something like that, so you try and copy it. It might not be as fancy as those plugins, but it sure does the job. In fact, it probably looks like this...</p>
+        </li>
+    </ol>
 </article>
-
 <article class="slide" id="2-3">
-	<h2>Well look what you did! You're a hero!</h2>
-			<pre><code>
+    <h2>Well look what you did! You're a hero!</h2>
+            <pre><code>
 &lt;script&gt;
   function runSomething1() {./*set an image to 1.jpg*/}
   function runSomething2() {./*set an image to 2.jpg*/}
@@ -88,67 +86,65 @@
 <p>As you gaze off into space, so proud, pointy-hair wonders if you could make a few minor changes to the thing... nothing huge of course.</p>
 </article>
 <article class="slide" id="2-4">
-	<h2>Chapter one: the plot thickens.</h2>
-	<blockquote>I want to add six more images and make every-other image link green, also the fourth image should show up when it loads.
-	<br/>
-	<br/>
-	<em>Love,<br/>
-	Dr. Pointy-hair, PhD.</em>
-	</blockquote>
-	<p>So that's what you go off and do, expanding on your code from before. You add six more functions, go back, make five of the links blue <code>style="hover{color:blue}"</code>,  and stick a <code>onload="doSomething4()"</code> into the body tag. </p>
-	<p>Wow, all this programming is hard work. Finally, after clicking around a bit everything looks like it's in working order. You tell the client they just have to change index2.html in their webserver to index.html, and it will be live. Just to be safe, make an index-bakJul42011.html.bak file so they have a copy of the old one.</p>
-	<p>Another job well done!</p>
+    <h2>Chapter one: the plot thickens.</h2>
+    <blockquote>I want to add six more images and make every-other image link green, also the fourth image should show up when it loads.
+    <br/>
+    <br/>
+    <em>Love,<br/>
+    Dr. Pointy-hair, PhD.</em>
+    </blockquote>
+    <p>So that's what you go off and do, expanding on your code from before. You add six more functions, go back, make five of the links blue <code>style="hover{color:blue}"</code>,  and stick a <code>onload="doSomething4()"</code> into the body tag. </p>
+    <p>Wow, all this programming is hard work. Finally, after clicking around a bit everything looks like it's in working order. You tell the client they just have to change index2.html in their webserver to index.html, and it will be live. Just to be safe, make an index-bakJul42011.html.bak file so they have a copy of the old one.</p>
+    <p>Another job well done!</p>
 </article>
 <article class="slide" id="2-5">
-	<h2>Well look what you did! You little jerk!</h2>
-	<p>Pointy hair isn't happy, he renamed files like you said on his website and ran the page only to be faced with this friendly box:</p>
-	<img src="./mise.gif" alt="JavaScript errors in Internet Explorer" />
-	<p>Of course, you just explain to him he's on a really really old browser and he should upgrade because Internet Explorer is stupid and smells like old cheese also Fox fires are so 1337.</p>
-	<p>Pointy hair kindly asks if you've lost your freaking mind. His customers use this browser. He paid you to make this work, so go and make it work. Other sites have stuff like this and it works fine in his browser. You're not getting paid till this works.</p>
-	<h3>Finally, it works!</h3>
-	<p>Hours and hours of hard work later you re-write the code twice and finally it works in the browser he uses. You just hope it works in other browsers as well. It's just a shame you ended up working for less than $10.00 per hour on this... Stupid IE.</p>
+    <h2>Well look what you did! You little jerk!</h2>
+    <p>Pointy hair isn't happy, he renamed files like you said on his website and ran the page only to be faced with this friendly box:</p>
+    <img src="./mise.gif" alt="JavaScript errors in Internet Explorer" />
+    <p>Of course, you just explain to him he's on a really really old browser and he should upgrade because Internet Explorer is stupid and smells like old cheese also Fox fires are so 1337.</p>
+    <p>Pointy hair kindly asks if you've lost your freaking mind. His customers use this browser. He paid you to make this work, so go and make it work. Other sites have stuff like this and it works fine in his browser. You're not getting paid till this works.</p>
+    <h3>Finally, it works!</h3>
+    <p>Hours and hours of hard work later you re-write the code twice and finally it works in the browser he uses. You just hope it works in other browsers as well. It's just a shame you ended up working for less than $10.00 per hour on this... Stupid IE.</p>
 </article>
-
 <article class="slide" id="2-6">
-	<h2>How was that vacation?</h2>
-	<p>Hope you had fun. We needed changes while you were away but everyone said the code was just way too complex to figure out. Hope you can work it out. We want all those thumbnails to have a caption now. Better look at your code.</p>
-	<pre><code>onclick=&quot;function _gjuc(){var b=_gjwl.href.indexOf(\&quot;#\&quot;);if(b&gt;=0){var a=_gjwl.href.substring(b+1);if(/(^|&amp;)q=/.test(a)&amp;&amp;a.indexOf(\&quot;#\&quot;)==-1&amp;&amp;!/(^|&amp;)cad=h($|&amp;)/.test(a)){_gjwl.replace(\&quot;/search?\&quot;+a.replace(/(^|&amp;)fp=[^&amp;]*/g,\&quot;\&quot;)+\&quot;&amp;cad=h\&quot;);return 1}}return 0;}&quot;</code></pre>
-	<p>Uhhh, wait, you wrote this? What did it do? Ugh... Okay, maybe you should check out some blogs for a while and it will come back to you. Oh, this looks neat, <a href="http://thedailywtf.com/Articles/OnClick-Does-What!.aspx">TheDailyWTF</a>. A site that showcases bad code? </p>
-	<pre><code>onclick=&quot;function _gjuc(){var b=_gjwl.href.indexOf(\&quot;#\&quot;);if(b&gt;=0){var a=_gjwl.href.substring(b+1);if(/(^|&amp;)q=/.test(a)&amp;&amp;a.indexOf(\&quot;#\&quot;)==-1&amp;&amp;!/(^|&amp;)cad=h($|&amp;)/.test(a)){_gjwl.replace(\&quot;/search?\&quot;+a.replace(/(^|&amp;)fp=[^&amp;]*/g,\&quot;\&quot;)+\&quot;&amp;cad=h\&quot;);return 1}}return 0;}&quot;</code></pre>
-	<p>That's your code out there. Oh, that's not good. That's not good at all. Who sent this in? Was it one of the people they had look at your code? Why would they do this? This is so embarassing!</p>
-	<p>But wait! They don't understand! It's totally out of context. This is top-notch programming! You wrote this yourself! You spent a long time learning how to write JavaScript this well, and it was really hard. They're just jealious. I'll show them, I'll make this code work fine. It'll only take you a few days... Better fire up dreamweaver.</p>
+    <h2>How was that vacation?</h2>
+    <p>Hope you had fun. We needed changes while you were away but everyone said the code was just way too complex to figure out. Hope you can work it out. We want all those thumbnails to have a caption now. Better look at your code.</p>
+    <pre><code>onclick=&quot;function _gjuc(){var b=_gjwl.href.indexOf(\&quot;#\&quot;);if(b&gt;=0){
+    var a=_gjwl.href.substring(b+1);if(/(^|&amp;)q=/.test(a)&amp;&amp;a.indexOf(\&quot;#\&quot;)==-1&amp;&amp;!/(^|&amp;)cad=h($|&amp;)/.test(a)){
+    _gjwl.replace(\&quot;/search?\&quot;+a.replace(/(^|&amp;)fp=[^&amp;]*/g,\&quot;\&quot;)+\&quot;&amp;cad=h\&quot;);return 1}}return 0;}&quot;</code></pre>
+    <p>Uhhh, wait, you wrote this? What did it do? Ugh... Okay, maybe you should check out some blogs for a while and it will come back to you. Oh, this looks neat, <a href="http://thedailywtf.com/Articles/OnClick-Does-What!.aspx">TheDailyWTF</a>. A site that showcases bad code? </p>
+    <pre><code>onclick=&quot;function _gjuc(){var b=_gjwl.href.indexOf(\&quot;#\&quot;);if(b&gt;=0){
+    var a=_gjwl.href.substring(b+1);if(/(^|&amp;)q=/.test(a)&amp;&amp;a.indexOf(\&quot;#\&quot;)==-1&amp;&amp;!/(^|&amp;)cad=h($|&amp;)/.test(a)){
+    _gjwl.replace(\&quot;/search?\&quot;+a.replace(/(^|&amp;)fp=[^&amp;]*/g,\&quot;\&quot;)+\&quot;&amp;cad=h\&quot;);return 1}}return 0;}&quot;</code></pre>    <p>That's your code out there. Oh, that's not good. That's not good at all. Who sent this in? Was it one of the people they had look at your code? Why would they do this? This is so embarassing!</p>
+    <p>But wait! They don't understand! It's totally out of context. This is top-notch programming! You wrote this yourself! You spent a long time learning how to write JavaScript this well, and it was really hard. They're just jealious. I'll show them, I'll make this code work fine. It'll only take you a few days... Better fire up dreamweaver.</p>
 </article>
-
 <article class="slide" id="2-7">
-	<h2>It's not you, it's me. We had to hire someone else.</h2>
-	<p>
-	<strong>Lancey Howard:</strong> Gets down to what it's all about, doesn't it? Making the wrong move at the right time. <br/>
-	<strong>Cincinnati Kid:</strong> Is that what it's all about? <br/>
-	<strong>Lancey Howard:</strong> Like life, I guess. You're good, kid, but as long as I'm around you're second best. You might as well learn to live with it.	<br/>
-	<br/>
-	From <em>The Cincinnati Kid</em>, 1965.
-	</p>
-	<img src="./Ckfilm.jpg" alt="JavaScript errors in Internet Explorer" />
-	<hr/>
-	<p>The cost of your code per hour is far below average, but the cost of keeping you around was too high. It's hard for the company to write new code around yours, and you take more than three-times as long as the new guy.</p>
-	<p>How did he get to be such a hot shot? I looked at all the best sites like w3schools, I made multiple backups on the server clearly re-named, my code was linked directly inside HTML element, my variable names didn't waste space, <strong>and</strong> I used the best browser out there.</p>
+    <h2>It's not you, it's me. We had to hire someone else.</h2>
+    <p>
+    <strong>Lancey Howard:</strong> Gets down to what it's all about, doesn't it? Making the wrong move at the right time. <br/>
+    <strong>Cincinnati Kid:</strong> Is that what it's all about? <br/>
+    <strong>Lancey Howard:</strong> Like life, I guess. You're good, kid, but as long as I'm around you're second best. You might as well learn to live with it.    <br/>
+    <br/>
+    From <em>The Cincinnati Kid</em>, 1965.
+    </p>
+    <img src="./Ckfilm.jpg" alt="JavaScript errors in Internet Explorer" />
+    <hr/>
+    <p>The cost of your code per hour is far below average, but the cost of keeping you around was too high. It's hard for the company to write new code around yours, and you take more than three-times as long as the new guy.</p>
+    <p>How did he get to be such a hot shot? I looked at all the best sites like w3schools, I made multiple backups on the server clearly re-named, my code was linked directly inside HTML element, my variable names didn't waste space, <strong>and</strong> I used the best browser out there.</p>
 </article>
-
 <article class="slide" id="2-8">
-	<h2>Mission Impossible</h2>
-	<h3>You have two options</h3>
-	<ol>
-		<li>
-			<h4>Figure out how to write better JavaScript</h4>
-		</li>
-		<li>
-			<h4>Go find something else to do that doesn't involve programming</h4>
-		</li>
-	</ol>
-	<p>Oh look, a slideshow called <strong>So, you want to write quality JavaScript?</strong>, lets read that.</p>
+    <h2>Mission Impossible</h2>
+    <h3>You have two options</h3>
+    <ol>
+        <li>
+            <h4>Figure out how to write better JavaScript</h4>
+        </li>
+        <li>
+            <h4>Go find something else to do that doesn't involve programming</h4>
+        </li>
+    </ol>
+    <p>Oh look, a slideshow called <strong>So, you want to write quality JavaScript?</strong>, lets read that.</p>
 </article>
-
-
 
 <article class="slide" id="3-1">
     <h1>Act one: How things work</h1>
@@ -329,7 +325,7 @@
     <p>You've done great work so far, unfortunately, there are evil wizards at play.</p>
     <p>While you've designed all these wonderful things, there are those out there who don't understand why you did some things the way you did, and simply do not care. 
     Normally this wouldn't be a big deal, except, they try to work around all you've created with cheap hackish tricks rather than learn it.</p>
-    <p>The following may seem cule and brutal, but it's the present state of the world as we know it.</p>
+    <p>The following may seem crule and brutal, but it's the present state of the world as we know it.</p>
     <p>What evils do you face? These evil wizards have done such things as, rather than use your Cat Object Model to make one's wiskers move, they feed them all into a meat grinder and glue the bits together the same way... every time they want to move a whisker. Why? Because, they say, it's easier.</p>
     <p>They know nothing of your cats, they stich cute outfits and scripts to read to them right into a cat's flesh, rather than send them in a seperate package.</p>
     <p>What's worse, the information out there that instructs a normal person to do these things is the most common and first thing they see when trying to use your Hyper Cats. They don't even know there's a better way than murdering kittens and unspeakable torture. Lets make a commitment now to save the kittens.</p>
@@ -352,8 +348,10 @@
     <p>Who came up with HTTP? The International Engineering Task force. They create these documents called "RFCs", which basically means "Request for comments". They number them, and the one that describes HTTP happens to be RFC 2616. It's been around since 1999, and introduced HTML 1.1, which made some changes from HTML 1.0, which came out in 1946 under RFC 1945, which built on the first version of HTTP which came out in 1991, surprisingly not under the IETF who wern't really the powerful group they are today. 
     Why am I telling you all this? Because you need to know that people have been working on that backbone of web of web technology for over 20 years. To put this into perspective, Linux came out the same year. </p>
     <p>Why am I really telling you this? Because standards are very important, you can't just slap stuff together and say "yeah, kinda does it", without becoming an evil wizard that doesn't care how many developers they turn into psycopaths. (You have a direct impact on making people swear and enter fits to rage by being a dark wizard).</p>
-    <p>Why else? Because HTTP isn't a magical hand-wavy thing, it's percisely defined and much shorter than this tutorial. There's two actions web developers need to be concerned with, the GET and the POST request. One gets data, one submits information that takes an action on the server somewhere.</p>
-    <p>All it does is work as the mechanisim between you and the server. Once the data is on your side, the server could have exploded and the data is still on your side. The same goes for you sending data to the server, there's no "constant" communication. 
+    <p>Why else? Because HTTP isn't a magical hand-wavy thing, it's percisely defined and much shorter than this tutorial.
+    There's two actions web developers need to be concerned with, the GET and the POST request. GET was created to gets data, POST was created to send data to the server, and preform an action.</p>
+    <p>Can you use a GET request to preform an action and a POST request to get information? Yes, but you shouldn't do this in reverse, and we'll explain why later when discussing common problems more generally. Nothing worse than having a web crawler delete every record from your website because you're using GET to preform actions!</p>
+    <p>All HTTP does is work as the mechanisim between you and the server. Once the data is on your side, the server could have exploded and the data is still on your side. The same goes for you sending data to the server, there's no "constant" communication. 
     Pay attention, because one of the top questions I see people ask is why their JavaScript can't interact with the server, and it's very simple: it's sent from the server to run on your machine exclusively. The code your browser runs never runs in the server.</p>
     <p>That's really the basics of what you need to know. HTTP does more than just GET and POST, and if you're up for it I encourage you to read the most recent RFC that defines it.</p>
     <p>Remember, this isn't magic, it's just a block of text that describes things you're sending back and forth.</p>
@@ -373,10 +371,10 @@
             &lt;p Colour everything orange and When they click on a paragaph make it do something.&gt;Hurray, I'm text.&lt;/p&gt;
             &lt;p Colour everything orange and When they click on a paragaph make it do something.&gt;Hurray, I'm text.&lt;/p&gt;
           &lt;/body&gt;
-        &lt;/hcml&gt;
+        &lt;/html&gt;
         </code></pre>
 
-    </p>Or something like this?</p>
+    <p>Or something like this?</p>
 
         <pre><code>
         &lt;html&gt;
@@ -392,10 +390,10 @@
             &lt;p&gt;Hurray, I'm text.&lt;/p&gt;
             &lt;p&gt;Hurray, I'm text.&lt;/p&gt;
           &lt;/body&gt;
-        &lt;/hcml&gt;
+        &lt;/html&gt;
         </code></pre>
     
-    </p>Obviously the answer is the code sample that seperates concerns. You can easily make all the paragphs blue instead, or make a differnt action happen, quickly add paragraphs, and read it much more quickly. One common defence I hear for the first method is it's shorter lines, which is very nice and all but real programmers don't look at the number of lines. Real programmers look at quality and complexity.</p>
+    <p>Obviously the answer is the code sample that seperates concerns. You can easily make all the paragphs blue instead, or make a differnt action happen, quickly add paragraphs, and read it much more quickly. One common defence I hear for the first method is it's shorter lines, which is very nice and all but real programmers don't look at the number of lines. Real programmers look at quality and complexity.</p>
     <p>The bad technique quickly becomes a nightmare to work with, eating up all of your precious time dealing with boring errors that don't seem to go away rather than quickly making such a trivial change and being onto your next exciting challenge.</p>
     <p>HTML is mostly looked after by the W3C and the WHATWG. The W3C has a validator that describes to you what errors exist in your HTML code, and I highly advise you start using it.</p>
 </article>
@@ -431,303 +429,454 @@
         <li>Learn the Window API, learn the DOM API, and learn the XHR API. If you don't know these three things you have no business writing code for the browser, they are the basic building blocks of what make everything in the browser so cool.</li>
     </ul>
 </article>
+
 <article class="slide" id="4-1">
-	<h1>Act two: This things bigger than just you and me</h1>
+    <h1>Act two: This things bigger than just you and me</h1>
 </article>
 <article class="slide" id="4-2">
-	<h2>Secret agent man</h2>
-	<p>Lets go over hiding techniques</p>
-	<p></p>
-	<p></p>
+    <h2>Secret agent man</h2>
+    <p>Lets go over hiding techniques</p>
+    <p>
+        -put a bunch of whitespace in there
+        -javascript right-click
+        -"encrypt"
+        -spending money on something stupid http://www.juniper.net/security/auto/vulnerabilities/vuln7169.html
+        -using flash
+        -http referer header
+    </p>
+    <p>Don't be an idiot, be proud of what you made, put it online</p>
+    <p>Everything on the web is open-source, there is no possibility what-so-ever to hide your code, anyone who says otherwise is trying to fraud you of your money.</p>
 </article>
 <article class="slide" id="4-3">
-	<h2>It's a big world after all</h2>
-	<p>Lets go over hiding techniques</p>
-	<p></p>
-	<p></p>
+    <h2>It's a big world after all</h2>
+    <p>JavaScript's been around a long time, been known as many things, gone through many changes, and survived through changes in not just how the web works, but how browsers are built.</p>
+
+    <p>There's dozens of browsers, modern, leagacy, and future. You must be aware of this, as you are likely to deploy code that works in many browsers.</p>
+    <p>It's important to keep in mind that your code must fulfil a need. If the need absolutely has to work in legacy browsers, then that's your objective. If you're lucky, you can write beautiful standards-compliant-code. If you're smart, you might be able to do both.</p>
+    <p>What are we concerned about in terms of browsers that is on the way out? Right now, IE6 is in it's death throws, and the other legacy 
+    versions are on their way out. Aside from personal computers we have the legacy mobile platform, a strange mix of awkard rendering engines 
+    that work half the time and don't the rest. What's going to slow you down you here? Legacy browsers were really the days of the wild 
+    west, everyone just invted whatver blink tags they wanted, created whatever programming languages or plugins, invented their own standards, 
+    and other things. They did this to try and gain competitive market share of the browsers by fighting on features. Unfortunately, standards-compliant 
+    is only recently seen as a useful feature. 
+    </p>
+    <p>
+    The unfortunate result of this is what we're still dealing with today, because for some bizzare reason users refuse to update their decade-old 
+    browsers for free (an interesting study for anyone into economics or psycology). Old browsers might make styles the wrong way, or have ineffiecient code to preform any given task, or simply lots of little quirks.
+    </p>
+    <p>What are we concerned about in terms of browsers that is modern? Modern browsers of 2011 are much more robust and standards-compliant. 
+    There's unfortunately some things that create quirks between browsers as they are not perfectly standards compliant, however, we have it 
+    much better than the legacy world. Our browser issues are much simpler to normalize, ineffiecient code is disappearing, browsers are mostly
+    open-source (so everyone can fix the problems), and are finally getting over the concept of releasing a single version and rather 
+    started automatically updating with the latest and best tools, so the users have minimal excuse to have outdated browsers even three months later.
+    </p>
+    <p>What are we concerned about in terms of browsers that haven't been made yet? Browsers are now growing towards reaching 
+    perfect standards compliance, which is great news for anyone who enjoys maintaining their grasp on sanity. This doesn't mean
+    standards are finalyized, quite the oposite: they're growing faster than ever. We're reaching brave new boundries of what HTML and HTTP
+    was conceived capable of doing in the 1980s, leading us to a place where we can create 3d rendering engines and powerful apps. In the future
+    of browsers we must focus on maintainable code, being sure our code isn't broken by updated standards, but generally, life's looking good.
+    </p>
+    
+    <p>Much like the browser issue, there are dozens of JS engines, modern, legacy, and future. The issues here are ones you need to be even more so aware of.</p>
+    <p>In the past, it was unheard of to run JavaScript outside of the browser, while today it's support is staggering. 
+    You may run it from the command line without a browser, or a whole webserver programmed with JavaScript for instance.</p>
+    <p>What are we concerned about in terms of JavaScript engines that is on the way out? Slow. They are so slow, it's jealious of a turtle gliding on snales stuck in molases going uphill.</p>
+    <p>What are we concerned about in terms of JavaScript engines that is modern? JIT compilers, so cool.</p>
+    <p>What are we concerned about in terms of JavaScript engines that haven't been made yet? ??? Oh man, I don't know, es-next?</p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="4-4">
-	<h2>The world can be flat</h2>
-	<p>Lets go over hiding techniques</p>
-	<p></p>
-	<p></p>
+    <h2>The world can be flat</h2>
+    <p>If you have to write code that works everywhere, you'll quickly find that you create the same set of fixes each time. Eventually
+    you'll get smarter and realize you can package them into a library, then you'll search google for something and find out somebody
+    already poured quite a serious bit of personal effort into making those for you already. Often called differnt things, such as
+    shims, browser compliancey libraries, or normalizers.
+    If you know your code's going to run into these issues, use a shim. If you want to make your own and more importantly have good reasons 
+    then please do so. In most cases, there's more to be gained by helping everyone and contributing to the shim than there is making your 
+    own shim that hasn't been tested by thousands of programmers.</p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="4-5">
-	<h2>Hack the gibson</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>Hack the gibson</h2>
+    <p>See if I can find that link to hackers xss page... http://ha.ckers.org/xss.html </p>
+    <p>Link to owasp too https://www.owasp.org/index.php?title=XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet </p>
+    <p> talk about ssl </p>
+    <p> talk about get/post </p>
+    <p> talk about making browsers crash </p>
 </article>
 <article class="slide" id="4-6">
-	<h2>Summary</h2>
-	<ul>
-		<li>Sure, you wrote something, but everyone can see it. It's all "open" source. 
-		Sure, you can obfuscate it, minifiy it, whatever... at the end of the day, if I 
-		want to see you code, it's trivial for me to defeat any methods you put in place.</li>
-		
-		<li>You need to understand multiple browsers differences. Target the most popular ones, 
-		or the ones your market demographic has. For instance, ie6 won't render DOM table-cell 
-		elements if you appendChild rather than the DOM API methods specifically for tables. 
-		More examples exist, you need to learn them. Ideally, you'll only know that browser 
-		differences exist and end up using a nice normalization libaray that makes everything 
-		work the right way.</li>
-		
-		<li>You need to understand how to write code around all of these issues in browsers, not your 
-		specific browser. You'll quickly learn things that work well in one browser are slow in another. 
-		You'll have to figure out how browsers work and why they're different.</li>
-		
-		<li>For the love of Odin's beard, don't write code that permits me to do cross-site-scripting 
-		attacks on your code. If you make an ajax call to a cell and do 
-		something like cell.innerHTML = "&lt;script&gt;alert("xss")&lt;/script&gt;", 
-		and an alert box shows up, you've done it wrong.</li>
-	</ul>
+    <h2>Don't listen to fools</h2>
+    <p>Establish criteria to determine who's a fool, who's a wise man, how you can become wise (philosophy of learning from mistakes)</p>
+    <p>Explain why w3schools and hitting up google generally sucks</p>
+    <p>Explain common awesome places to check out.</p>
+    <p>Authority is meaningless, proof is the gold-standard.</p>
+    <p></p>
 </article>
 <article class="slide" id="4-7">
-	<h2>Summary</h2>
-	<ul>
-		<li>Stay the bloody hell away from DynamicDrive, w3Schools, and websites that give bad advice. You need to find comunities that give good advice. Here on Stack Overflow we have the JavaScript and Node.JS chat rooms, and we do our best to keep pushing the limits of what's "better", where as sites like w3s keep outdated data and never bother with it. You should stick with the offical spec sites such as the W3C, the Mozilla Developer Network (MDN). Ask for peer-review of your code. When you feel like you're doing something painful with your code, when you're doing a lot of cut+paste+tweak with your code, you should immediately come to a chat room and ask for guidance on writing better code.</li>
-		<li>When you come for guidance, or want to share that really cool thing you made... please, pretty please. Please, make sure you documented it, make sure your variable names make sense, make sure it's not all one-lined. You need to write clean code. If you have a pile of garbage, not only have you failed, nobody who knows how to help you will want to. Help us help you.</li>
-	</ul>
+    <h2>Help me help you</h2>
+    <p>Your lazy and poorly written code isn't helpful to you, that's why you have a problem you need help with. Now you want me to decypher your insane garbage to fix something? You've totally lost your mind.</p>
+    <p>Stop failing</p>
+    <p>Learn</p>
+    <p>Teach</p>
 </article>
 <article class="slide" id="4-8">
-	<h2>Summary</h2>
-	<ul>
-		<li>You want to write JavaScript-- that's cool, respect that not everyone supports JavaScript. Two reasons for this-- 1) Faster Internet for everyone (rather than "ajax all the things" which leads to a slower experience). 2) Web's more accessible to people on console-based browsers, people running no-script, mobile phones. What I'm trying to say is, your site should degrade gracefully if someone doesn't have JavaScript and at the very least, use &lt;noscript&gt; tags to alert them as to such.</li>
-		<li>Because of the prototype nature of JavaScript, you can make changes to how the language actually works-- which is really sweet. You see, JavaScript is evolving, we're pulling out of "ECMA Script 3", which is the older version of JS, and into "ECMA Script 5" (aka, es5). Because of prototype, we can fix the es3 language in the field to work like es5. That means, ie6, a 10 year old browser gets language feature that came out last year. Use es5-shims wherever you can, they're really cool and you need to look into it.</li>
-		<li>The western world of English speaking white kids isn't who uses the internet. Code accordingly. This means you need to understand internationalization, and writing code that deals with higher demand. 10 years ago there were less than 500 Million people on-line, today it's roughly 2 billion, and in another 10 years? Probably close to every person on the planet will have internet access, that means you need to support names that don't fit the regex of /[a-z ']/i, but include Hindi, Arabic, accents (this is an existing problem from short-sighted developers), Chinese, and others. Understand character sets, Unicode and UTF-8.</li>
-	</ul>
+    <h2>Fail gracefully</h2>
+    <p>Yes, you write javaScript, but there's a lot of cases outside of running noscript plugins where JavaScript simply doesn't work, and I wish it did.</p>
+    <p>w3m, lynx, my blackberry, legacy stuff, proxies, scrapers, spiders, and noscript.</p>
+    <p>Don't be like twitter, your site shouldn't fail totally if your visitor doesn't have JS enabled.</p>
+    <p>Sometimes it's okay.</p>
+    <p>At the very minimum, alert that you need to enable js.</p>
+</article>
+<article class="slide" id="4-9">
+    <h2>Improve gracefully</h2>
+    <p>A lot of people have put a lot of great work making older browers support modern fetures. 
+    Don't bring down the quality of your site, improve the quality of their browser. IE6 sucks.</p>
+    <p>Is this really just repeating shims?</p>
+</article>
+<article class="slide" id="4-10">
+    <h2>Ohayo Gozaimasu</h2>
+    <p>Turns out more than just english speaking people under 50 years of age from western countries use the Internet, 
+    only 2 out of 7 billion people use the internet, names are really confusing, 
+    and english isn't all you'll have to think about.</p>
+    <p>Basically, learn to i18n.</p>
+    <p>My friend's last name is tancock, microsoft won't let him sign up for some services 
+    because the morality tyrants think it'd be much more appropreate if his last name were Smith.</p>
+</article>
+<article class="slide" id="4-11">
+    <h2>Summary</h2>
+    <ul>
+        <li>Sure, you wrote something, but everyone can see it. It's all "open" source. 
+        Sure, you can obfuscate it, minifiy it, whatever... at the end of the day, if I 
+        want to see you code, it's trivial for me to defeat any methods you put in place.</li>
+        
+        <li>You need to understand multiple browsers differences. Target the most popular ones, 
+        or the ones your market demographic has. For instance, ie6 won't render DOM table-cell 
+        elements if you appendChild rather than the DOM API methods specifically for tables. 
+        More examples exist, you need to learn them. Ideally, you'll only know that browser 
+        differences exist and end up using a nice normalization libaray that makes everything 
+        work the right way.</li>
+        
+        <li>You need to understand how to write code around all of these issues in browsers, not your 
+        specific browser. You'll quickly learn things that work well in one browser are slow in another. 
+        You'll have to figure out how browsers work and why they're different.</li>
+        
+        <li>For the love of Odin's beard, don't write code that permits me to do cross-site-scripting 
+        attacks on your code. If you make an ajax call to a cell and do 
+        something like cell.innerHTML = "&lt;script&gt;alert("xss")&lt;/script&gt;", 
+        and an alert box shows up, you've done it wrong.</li>
+    </ul>
+</article>
+<article class="slide" id="4-12">
+    <h2>Summary</h2>
+    <ul>
+        <li>Stay the bloody hell away from DynamicDrive, w3Schools, and websites that give bad advice. 
+        You need to find comunities that give good advice. Here on Stack Overflow we have the JavaScript 
+        and Node.JS chat rooms, and we do our best to keep pushing the limits of what's "better", where 
+        as sites like w3s keep outdated data and never bother with it. You should stick with the offical 
+        spec sites such as the W3C, the Mozilla Developer Network (MDN). Ask for peer-review of your code. 
+        When you feel like you're doing something painful with your code, when you're doing a lot of 
+        cut+paste+tweak with your code, you should immediately come to a chat room and ask for guidance on 
+        writing better code.</li>
+        
+        <li>When you come for guidance, or want to share that really cool thing you made... please, pretty 
+        please. Please, make sure you documented it, make sure your variable names make sense, make sure it's 
+        not all one-lined. You need to write clean code. If you have a pile of garbage, not only have you 
+        failed, nobody who knows how to help you will want to. Help us help you.</li>
+    </ul>
+</article>
+<article class="slide" id="4-13">
+    <h2>Summary</h2>
+    <ul>
+        <li>You want to write JavaScript-- that's cool, respect that not everyone supports 
+        JavaScript. Two reasons for this-- 1) Faster Internet for everyone (rather than 
+        "ajax all the things" which leads to a slower experience). 2) Web's more accessible 
+        to people on console-based browsers, people running no-script, mobile phones. What 
+        I'm trying to say is, your site should degrade gracefully if someone doesn't have 
+        JavaScript and at the very least, use &lt;noscript&gt; tags to alert them as to such.</li>
+        
+        <li>Because of the prototype nature of JavaScript, you can make changes to how the 
+        language actually works-- which is really sweet. You see, JavaScript is evolving, 
+        we're pulling out of "ECMA Script 3", which is the older version of JS, and into 
+        "ECMA Script 5" (aka, es5). Because of prototype, we can fix the es3 language in 
+        the field to work like es5. That means, ie6, a 10 year old browser gets language 
+        feature that came out last year. Use es5-shims wherever you can, they're really 
+        cool and you need to look into it.</li>
+        
+        <li>The western world of English speaking white kids isn't who uses the internet. 
+        Code accordingly. This means you need to understand internationalization, and 
+        writing code that deals with higher demand. 10 years ago there were less than 500 
+        Million people on-line, today it's roughly 2 billion, and in another 10 years? 
+        Probably close to every person on the planet will have internet access, that means 
+        you need to support names that don't fit the regex of /[a-z ']/i, but include Hindi, 
+        Arabic, accents (this is an existing problem from short-sighted developers), Chinese, 
+        and others. Understand character sets, Unicode and UTF-8.</li>
+    </ul>
 </article>
 
 <article class="slide" id="5-1">
-	<h1>Act three: How to write clean code, not a pasta</h1>
+    <h1>Act three: How to write clean code, not a pasta</h1>
 </article>
 <article class="slide" id="5-2">
-	<h2>A rose by any other name</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>A rose by any other name</h2>
+    <p></p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="5-3">
-	<h2>RTFM? I can't, you didn't WTFM!</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>RTFM? I can't, you didn't WTFM!</h2>
+    <p></p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="5-4">
-	<h2>Cut and paste</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>Cut and paste</h2>
+    <p></p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="5-5">
-	<h2>Summary</h2>
-	<ul>
-		<li>Name your variables after things that make sense.</li>
-		<li>Document your code. I don't care if you're using JSDoc powered by 
-		rhino or you have a bunch of scribbles. Write documentation that helps 
-		the person who is going to use your code. Write documentation for someone 
-		who wants to improve or maintain your code. Include useful comments. Comments 
-		like "This fizzes the bizz" or ones half-English half-french aren't helpful. 
-		Describe what a function does. Describe complex sections of code.</li>
-		
-		<li>Figure out how to limit repetition of code. Look for modular design or 
-		functional patterns. See what you can abstract. You should never end up 
-		cutting+pasting+tweaking large segments of code to do the same thing.</li>
-	</ul>
+    <h2>Summary</h2>
+    <ul>
+        <li>Name your variables after things that make sense.</li>
+        <li>Document your code. I don't care if you're using JSDoc powered by 
+        rhino or you have a bunch of scribbles. Write documentation that helps 
+        the person who is going to use your code. Write documentation for someone 
+        who wants to improve or maintain your code. Include useful comments. Comments 
+        like "This fizzes the bizz" or ones half-English half-french aren't helpful. 
+        Describe what a function does. Describe complex sections of code.</li>
+        
+        <li>Figure out how to limit repetition of code. Look for modular design or 
+        functional patterns. See what you can abstract. You should never end up 
+        cutting+pasting+tweaking large segments of code to do the same thing.</li>
+    </ul>
 </article>
 <article class="slide" id="5-6">
-	<h2>Summary</h2>
-	<ul>
-		<li>You need to understand the DOM API. The DOM and window objects provision for a lot of great things. This sounds like a lot of work but that's because it's a big scary acronym. A lot of you JavaScript ninjas like to write code such as &lt;a href="javascript:alert("foo")"&gt;. FFS DONT DO THAT. Wait for the full document to be loaded, separate your JavaScript code from the html document. This is basic OOP practices 101, just don't in-line your JS or CSS into your html document, ever. Figure out how to do it properly or find someone who knows how to show you how to do it. Again, ask questions.</li>
-		<li>the Javascript:foo("buz") is a psudeo-protocol, it's not fully supported, and if you don't in-line javascript you wouldn't be using it in the first place. I promise you from the bottom of my heart there is no reason what-so-ever on this earth or anywhere in the universe that you NEED to put your javascript inside of an HTML element. Ever. So don't do it. I won't even help people that do that any more, it's that bad.</li>
-	</ul>
+    <h2>Summary</h2>
+    <ul>
+        <li>You need to understand the DOM API. The DOM and window objects provision for a 
+        lot of great things. This sounds like a lot of work but that's because it's a big 
+        scary acronym. A lot of you JavaScript ninjas like to write code such 
+        as &lt;a href="javascript:alert("foo")"&gt;. FFS DONT DO THAT. Wait for the full document 
+        to be loaded, separate your JavaScript code from the html document. This is basic OOP 
+        practices 101, just don't in-line your JS or CSS into your html document, ever. 
+        Figure out how to do it properly or find someone who knows how to show you how 
+        to do it. Again, ask questions.</li>
+        
+        <li>the Javascript:foo("buz") is a psudeo-protocol, it's not fully supported, and if you 
+        don't in-line javascript you wouldn't be using it in the first place. I promise you from 
+        the bottom of my heart there is no reason what-so-ever on this earth or anywhere in the 
+        universe that you NEED to put your javascript inside of an HTML element. Ever. So don't 
+        do it. I won't even help people that do that any more, it's that bad.</li>
+    </ul>
 </article>
 
 <article class="slide" id="6-1">
-	<h1>Act four: How things work</h1>
+    <h1>Act four: How things work</h1>
 </article>
 <article class="slide" id="6-2">
-	<h2>Title</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>Title</h2>
+    <p></p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="6-3">
-	<h2>Title</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>Title</h2>
+    <p></p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="6-4">
-	<h2>Title</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>Title</h2>
+    <p></p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="6-5">
-	<h2>Title</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>Title</h2>
+    <p></p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="6-6">
-	<h2>Title</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>Title</h2>
+    <p></p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="6-7">
-	<h2>Summary</h2>
-	<ul>
-		<li>Global variables are one of the biggest problems. Figure out how functional programming in 
-		JavaScript works. Figure out what hoisting is. Figure out how to avoid global variables.</li>
-		
-		<li>Use static code analysis tools. These will alert you right-away to all the little "oops" you 
-		made when writing your code. Forgot a semicolon somewhere? Oh, there it is. Have a global somewhere? 
-		Oh, there it is. Code that might throw a bunch of mystery errors when you try to run it? OH! There 
-		they are! No more screwing around and staring into a pile of code for hours trying to figure out 
-		something that's just a syntax error. (Well, hardly any, you might have done something it can't 
-		catch, but it's generally awesome).</li>
-		
-		<li>Unit test. There's no reason not to be. There's tons of unit testing tools out there. Basically, unit 
-		testing is "Here's my function" and "I want it to output Y" "Here's some test inputs" And the test is "Did 
-		they all work?" There's many JS testing frameworks, like the popular QUnit. Take a tour through your favorite 
-		search engine and see what tickles your fancy. But use them.</li>
-	</ul>
+    <h2>Summary</h2>
+    <ul>
+        <li>Global variables are one of the biggest problems. Figure out how functional programming in 
+        JavaScript works. Figure out what hoisting is. Figure out how to avoid global variables.</li>
+        
+        <li>Use static code analysis tools. These will alert you right-away to all the little "oops" you 
+        made when writing your code. Forgot a semicolon somewhere? Oh, there it is. Have a global somewhere? 
+        Oh, there it is. Code that might throw a bunch of mystery errors when you try to run it? OH! There 
+        they are! No more screwing around and staring into a pile of code for hours trying to figure out 
+        something that's just a syntax error. (Well, hardly any, you might have done something it can't 
+        catch, but it's generally awesome).</li>
+        
+        <li>Unit test. There's no reason not to be. There's tons of unit testing tools out there. Basically, unit 
+        testing is "Here's my function" and "I want it to output Y" "Here's some test inputs" And the test is "Did 
+        they all work?" There's many JS testing frameworks, like the popular QUnit. Take a tour through your favorite 
+        search engine and see what tickles your fancy. But use them.</li>
+    </ul>
 </article>
 <article class="slide" id="6-8">
-	<h2>Summary</h2>
-	<ul>
-		<li>Source control management, also known as version control. Git's popular, and with good reason. So is SVN and a 
-		few others. What you need to stop doing this very instant is editing production code. You need to stop renaming 
-		files main_backup_20110911.js.bak.1 You lose stuff, your directory gets messy, you can't easily "rewind" to a 
-		previous point in time. You can't see what's going on, you can't make code patches. So, just start learning GIT, 
-		it should take you an hour and you'll never go back.</li>
-		
-		<li>Peer review. You're not that good, neither am I. I get better by asking for feedback as much as I can. 
-		That's how you should do it too.</li>
-	</ul>
+    <h2>Summary</h2>
+    <ul>
+        <li>Source control management, also known as version control. Git's popular, and with good reason. So is SVN and a 
+        few others. What you need to stop doing this very instant is editing production code. You need to stop renaming 
+        files main_backup_20110911.js.bak.1 You lose stuff, your directory gets messy, you can't easily "rewind" to a 
+        previous point in time. You can't see what's going on, you can't make code patches. So, just start learning GIT, 
+        it should take you an hour and you'll never go back.</li>
+        
+        <li>Peer review. You're not that good, neither am I. I get better by asking for feedback as much as I can. 
+        That's how you should do it too.</li>
+    </ul>
 </article>
 
 <article class="slide" id="7-1">
-	<h1>Act five: How to write JavaScript people will love</h1>
+    <h1>Act five: How to write JavaScript people will love</h1>
 </article>
 <article class="slide" id="7-2">
-	<h2>Title</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>Title</h2>
+    <p></p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="7-3">
-	<h2>Title</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>Title</h2>
+    <p></p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="7-4">
-	<h2>Summary</h2>
-	<ul>
-		<li>Figure out why your code is slow. Use jspref and create tests.</li>
-		<li>Stop binding events to one DOM element, it's slow, and creates serious event bubbling issues that will waste a lot of your time. Research "event delegation" in JavaScript.</li>
-		<li>STOP using innerHTML to edit the DOM. This goes back to learning what HTML is, and learning what the DOM is. HTML is data sent from the server that your browser rendering engine uses to create a bunch of programming objects that end up being a Document Object. When you use innerHTML you're asking your browser to re-render the whole thing. Thankfully, like way over 10 years ago, we created the DOM API, and it lets you "append child" or "create text node," without having to update the whole thing. innHTML is a disgrace that Microsoft invented -- if you use it, you also lose all privileges to whine about IE6 being awful because you're helping it's garbage stick around forever. Learn the DOM.</li>
-	</ul>
+    <h2>Summary</h2>
+    <ul>
+        <li>Figure out why your code is slow. Use jspref and create tests.</li>
+        
+        <li>Stop binding events to one DOM element, it's slow, and creates serious event bubbling 
+        issues that will waste a lot of your time. Research "event delegation" in JavaScript.</li>
+        
+        <li>STOP using innerHTML to edit the DOM. This goes back to learning what HTML is, 
+        and learning what the DOM is. HTML is data sent from the server that your browser 
+        rendering engine uses to create a bunch of programming objects that end up being 
+        a Document Object. When you use innerHTML you're asking your browser to re-render 
+        the whole thing. Thankfully, like way over 10 years ago, we created the DOM API, 
+        and it lets you "append child" or "create text node," without having to update the 
+        whole thing. innHTML is a disgrace that Microsoft invented -- if you use it, you also 
+        lose all privileges to whine about IE6 being awful because you're helping it's garbage 
+        stick around forever. Learn the DOM.</li>
+    </ul>
 </article>
 <article class="slide" id="7-5">
-	<h2>Summary</h2>
-	<ul>
-		<li>It needs to work everywhere it can. If something isn't supported, it needs to degrade gracefully so the experience doesn't suck-- you can't just slap your users in the face and crash.</li>
-		<li>Copyright and licence are important. Don't rip-off other people's hard work. If someone says "not for resale," you can't sell it. Don't be a jerk, or we'll hate your code for ripping off hard-working-people.</li>
-		<li>JS is prototypes, not classes. Stop doing that. If you don't understand how prototype works, you need to. Google it. JavaScript is not class-based, stop trying to make classes, it very rarely works out well. People try to write classical code in a prototype language and use that as a case for "why the language sucks", I could make the same case for Ruby not being able to support prototype. Learn something new and stop doing it wrong.</li>
-	</ul>
+    <h2>Summary</h2>
+    <ul>
+        <li>It needs to work everywhere it can. If something isn't supported, it needs to degrade 
+        gracefully so the experience doesn't suck-- you can't just slap your users in the face and crash.</li>
+        
+        <li>Copyright and licence are important. Don't rip-off other people's hard work. If 
+        someone says "not for resale," you can't sell it. Don't be a jerk, or we'll hate your 
+        code for ripping off hard-working-people.</li>
+        
+        <li>JS is prototypes, not classes. Stop doing that. If you don't understand how prototype 
+        works, you need to. Google it. JavaScript is not class-based, stop trying to make classes, 
+        it very rarely works out well. People try to write classical code in a prototype language 
+        and use that as a case for "why the language sucks", I could make the same case for Ruby 
+        not being able to support prototype. Learn something new and stop doing it wrong.</li>
+    </ul>
 </article>
 
 <article class="slide" id="8-1">
-	<h1>Act six: Back to basics</h1>
+    <h1>Act six: Back to basics</h1>
 </article>
 <article class="slide" id="8-2">
-	<h2>Title</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>Title</h2>
+    <p></p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="8-3">
-	<h2>Title</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>Title</h2>
+    <p></p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="8-4">
-	<h2>Summary</h2>
-	<ul>
-		<li>You're wrong, and that's awesome, because you know something now. Nothing is worse than someone who won't admit to being wrong and keeps slamming bad code out the door like they're some renegade rock-star superhero ninja. They're just fools. Admit you can be wrong, admit you might be wrong, ask for help.</li>
-		<li>You don't always need jQuery. jQuery creates a lot of slow code and helps people who don't know JS to write JS. This is further a problem as JS doesn't require you know JS to write JS. Go figure. Once you understand a few of the things I mentioned above such as learning events, learning the DOM, learning about innerHTML, you'll see why jQuery can be harmful to your code. It can be used correctly in a lot of places, but often you can use a smaller library or even gasp the standard JavaScript that comes with your browser to accomplish something. You don't need jQuery to do anything, it makes it easier to write some code which is cool if you're learning but you need to start doing better and learning more -- when you know more, you'll figure out how to write better code in jQuery anyway. Check out some other JavaScript libraries and stop being so close-minded.</li>
-		<li>You don't need cut+paste+tweak, make DRY code. I've mentioned this before, but it's important here as well. You can't write quality code if your code base is a disgrace.</li>
-	</ul>
+    <h2>Summary</h2>
+    <ul>
+        <li>You're wrong, and that's awesome, because you know something now. Nothing is worse than someone who won't admit to being wrong and keeps slamming bad code out the door like they're some renegade rock-star superhero ninja. They're just fools. Admit you can be wrong, admit you might be wrong, ask for help.</li>
+        <li>You don't always need jQuery. jQuery creates a lot of slow code and helps people who don't know JS to write JS. This is further a problem as JS doesn't require you know JS to write JS. Go figure. Once you understand a few of the things I mentioned above such as learning events, learning the DOM, learning about innerHTML, you'll see why jQuery can be harmful to your code. It can be used correctly in a lot of places, but often you can use a smaller library or even gasp the standard JavaScript that comes with your browser to accomplish something. You don't need jQuery to do anything, it makes it easier to write some code which is cool if you're learning but you need to start doing better and learning more -- when you know more, you'll figure out how to write better code in jQuery anyway. Check out some other JavaScript libraries and stop being so close-minded.</li>
+        <li>You don't need cut+paste+tweak, make DRY code. I've mentioned this before, but it's important here as well. You can't write quality code if your code base is a disgrace.</li>
+    </ul>
 </article>
 <article class="slide" id="8-5">
-	<h2>Summary</h2>
-	<ul>
-		<li>Don't abuse arrays/object differences, learn how to loop. Learn why you use a for (;;) and why you use a for( in ) loop. When to use a while loop. Stop nesting IFs when you can just use a switch case. Objects do not preserve order, so don't use them as an array; old Opera/FF, old MISE, sometimes Flash won't respect the order of your objects. Use an array if you want to keep an order of things, use an object if you want an object (something that doesn't have order of elements).</li>
-		<li>How decision structures can be used to your advantage, not add complexity to your code. Stop nesting IFs, figure out how Boolean logical operators work. Figure out how switch-case works.</li>
-		<li>RTFM. The best place to learn about better code is by reading the actual spec. Read the RFC specs on that part of code you're trying to use. Read the ECMAScript document. Read the W3C DOM spec. Read the W3C XHTML/HTML/HTML5 spec. Read the specs, they're good.</li>
-	</ul>
+    <h2>Summary</h2>
+    <ul>
+        <li>Don't abuse arrays/object differences, learn how to loop. Learn why you use a for (;;) and why you use a for( in ) loop. When to use a while loop. Stop nesting IFs when you can just use a switch case. Objects do not preserve order, so don't use them as an array; old Opera/FF, old MISE, sometimes Flash won't respect the order of your objects. Use an array if you want to keep an order of things, use an object if you want an object (something that doesn't have order of elements).</li>
+        <li>How decision structures can be used to your advantage, not add complexity to your code. Stop nesting IFs, figure out how Boolean logical operators work. Figure out how switch-case works.</li>
+        <li>RTFM. The best place to learn about better code is by reading the actual spec. Read the RFC specs on that part of code you're trying to use. Read the ECMAScript document. Read the W3C DOM spec. Read the W3C XHTML/HTML/HTML5 spec. Read the specs, they're good.</li>
+    </ul>
 </article>
 
 <article class="slide" id="9-1">
-	<h1>Act seven: Way of the programmer</h1>
+    <h1>Act seven: Way of the programmer</h1>
 </article>
 <article class="slide" id="9-2">
-	<h2>Title</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>Title</h2>
+    <p></p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="9-3">
-	<h2>Title</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>Title</h2>
+    <p></p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="9-4">
-	<h2>Summary</h2>
-	<ul>
-		<li>You should help the community, you should write code that will be around for a long time. Have some passion about your code and community. If you left bad knowledge somewhere, go the hell back and fix it. Bad information is really hard to purge and sticks around for ever. Do your part. Don't help w3schools make the web worse.</li>
-		<li>Don't jump in from nowhere and say "Hey I got a great idea for how to use which" drop a bunch of code that nobody can use and disappear. You contributed nothing. Don't use variables like a and chezburger.</li>
-		<li>Learn to spot the bad code and the good code, find it in your own code, make your bad code into good code.</li>
-	</ul>
+    <h2>Summary</h2>
+    <ul>
+        <li>You should help the community, you should write code that will be around for a long time. Have some passion about your code and community. If you left bad knowledge somewhere, go the hell back and fix it. Bad information is really hard to purge and sticks around for ever. Do your part. Don't help w3schools make the web worse.</li>
+        <li>Don't jump in from nowhere and say "Hey I got a great idea for how to use which" drop a bunch of code that nobody can use and disappear. You contributed nothing. Don't use variables like a and chezburger.</li>
+        <li>Learn to spot the bad code and the good code, find it in your own code, make your bad code into good code.</li>
+    </ul>
 </article>
 <article class="slide" id="9-5">
-	<h2>Summary</h2>
-	<ul>
-		<li>Create something, learn something, teach something.</li>
-		<li>Broaden your horizons. You can't just write JavaScript forever -- take a sabbatical into something else that interests you, come back, share what you learnt and see if you can find a place for it in the community. Try to show the other world what value JavaScript has as well while you're out there.</li>
-		<li>You're still wrong, even when you do know everything. Use a proof to be correct, not your status/authority. You can never be right, but your proof is always correct. Don't get into pissing matches, as hard as it is to avoid sometimes. Either there's proof or there isn't. Flames help nobody</li>
-	</ul>
+    <h2>Summary</h2>
+    <ul>
+        <li>Create something, learn something, teach something.</li>
+        <li>Broaden your horizons. You can't just write JavaScript forever -- take a sabbatical into something else that interests you, come back, share what you learnt and see if you can find a place for it in the community. Try to show the other world what value JavaScript has as well while you're out there.</li>
+        <li>You're still wrong, even when you do know everything. Use a proof to be correct, not your status/authority. You can never be right, but your proof is always correct. Don't get into pissing matches, as hard as it is to avoid sometimes. Either there's proof or there isn't. Flames help nobody</li>
+    </ul>
 </article>
 
 <article class="slide" id="10-1">
-	<h1>Epiloge</h1>
+    <h1>Epiloge</h1>
 </article>
 <article class="slide" id="10-2">
-	<h2>Title</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>Title</h2>
+    <p></p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="10-3">
-	<h2>Title</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+    <h2>Title</h2>
+    <p></p>
+    <p></p>
+    <p></p>
 </article>
 <article class="slide" id="10-4">
-	<h2>Summary</h2>
-	<ul>
-		<li> </li>
-		<li> </li>
-		<li> </li>
-		<li> </li>
-	</ul>
+    <h2>Summary</h2>
+    <ul>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+    </ul>
 </article>
 
 </body>
